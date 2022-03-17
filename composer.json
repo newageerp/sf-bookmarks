@@ -1,0 +1,19 @@
+{
+  "name": "newageerp/sf-bookmarks",
+  "type": "symfony-bundle",
+  "autoload": {
+    "psr-4": {
+      "Newageerp\\SfBookmarks\\": ""
+    }
+  },
+  "require": {
+    "doctrine/orm": "^2.11"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Arturas Jegorenkovas",
+      "email": "info@newageerp.com"
+    }
+  ]
+}
