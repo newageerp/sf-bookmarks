@@ -7,7 +7,7 @@
     }
   },
   "require": {
-    "doctrine/orm": "^2.11"
+    "doctrine/orm": "^2"
   },
   "license": "MIT",
   "authors": [
