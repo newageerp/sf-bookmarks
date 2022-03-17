@@ -2,10 +2,11 @@
 
 namespace Newageerp\SfBookmarks\Object;
 
+use Newageerp\SfBaseEntity\Object\BaseEntity;
 use Newageerp\SfBookmarks\Interface\IBookmark;
 use Doctrine\ORM\Mapping as ORM;
 
-class BookmarkBase implements IBookmark
+class BookmarkBase extends BaseEntity implements IBookmark
 {
     /**
      * @ORM\Id
