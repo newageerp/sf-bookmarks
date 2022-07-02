@@ -16,7 +16,7 @@ class BookmarksController extends OaBaseController
     protected string $className = 'App\\Entity\\Bookmark';
 
     /**
-     * @Route(path="/getElement", methods={"GET"})
+     * @Route(path="/getElement", methods={"POST"})
      * @param Request $request
      * @return Response
      */
@@ -48,7 +48,7 @@ class BookmarksController extends OaBaseController
     }
 
     /**
-     * @Route(path="/toggleElement", methods={"GET"})
+     * @Route(path="/toggleElement", methods={"POST"})
      * @param Request $request
      * @return Response
      */
