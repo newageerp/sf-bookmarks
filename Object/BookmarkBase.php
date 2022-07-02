@@ -13,7 +13,7 @@ class BookmarkBase extends BaseEntity implements IBookmark
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
      */
-    private int $id;
+    private ?int $id = null;
 
     public function getId(): ?int
     {
