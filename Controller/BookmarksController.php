@@ -22,6 +22,8 @@ class BookmarksController extends OaBaseController
      */
     public function getElement(Request $request): Response
     {
+        $request = $this->transformJsonBody($request);
+
         try {
             if (!($user = $this->findUser($request))) {
                 throw new \Exception('Invalid user');
@@ -54,6 +56,8 @@ class BookmarksController extends OaBaseController
      */
     public function toggleElement(Request $request): Response
     {
+        $request = $this->transformJsonBody($request);
+
         $className = $this->className;
         try {
             if (!($user = $this->findUser($request))) {
